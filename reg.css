@@ -1,0 +1,121 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+.container{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0,0.1);
+    background-color: white;
+}
+.container header{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    
+}
+
+.container form{
+    position: relative;
+    margin-top: 20px;
+    min-height: 490px;
+    background-color: white;
+}
+.container form .detail.ID{
+    margin-top: 30px;
+}
+.container form .form{
+    position: absolute;
+    background-color: white;
+}
+.container form .form.Second{
+    opacity: 0;
+    pointer-events: none;
+}
+form.secActive .form.Second{
+    opacity: 1;
+    pointer-events: auto;
+}
+form.secActive .form.first {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.container form .title{
+    display: flex;
+    margin-bottom: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 7px 0;
+    color: black;
+}
+.container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+form .fields .input-field{
+    display: flex;
+    width: 250px;
+    flex-direction: column;
+}
+.input-field label {
+    font-size: 12px;
+    font-weight: 500;
+    color: black;
+}
+.input-field input {
+    outline: none;
+    font-size: 14px;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid  #dcdfe6;
+    padding: 0 15px;
+    height: 40px;
+    margin: 8px 0;
+}
+.group{
+    height: 35px;
+    outline: none;
+}
+.container form button, .back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    margin: 25px 0;
+    background-color: blueviolet;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.container form button,
+.container form .back{
+    font-size: 14px;
+    font-weight: 400;
+}
+form button:hover{
+    background-color: blue;
+}
+
+form .buttons{
+    display: flex;
+    align-items: center;
+}
+form .buttons button , .back{
+    margin-right: 14px;
+}
